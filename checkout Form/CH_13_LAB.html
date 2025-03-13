@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        fieldset {
+            border: 2px solid #6a0dad;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        legend {
+            font-weight: bold;
+            color: #6a0dad;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2 class="text-center mb-4">Order Form</h2>
+        <form id="order-form" action="/order" method="post" class="needs-validation" novalidate>
+            
+            <!-- Personal Information -->
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label for="given-name" class="form-label">Given Name</label>
+                        <input type="text" id="given-name" name="given_name" class="form-control" autocomplete="given-name" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="family-name" class="form-label">Family Name</label>
+                        <input type="text" id="family-name" name="family_name" class="form-control" autocomplete="family-name" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" class="form-control" autocomplete="tel" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" id="email" name="email" class="form-control" autocomplete="email" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="confirm-email" class="form-label">Confirm Email</label>
+                        <input type="email" id="confirm-email" name="confirm_email" class="form-control" autocomplete="email" required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Password -->
+            <fieldset>
+                <legend>Account Security</legend>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" id="password" name="password" class="form-control" autocomplete="new-password" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="confirm-password" class="form-label">Confirm Password</label>
+                        <input type="password" id="confirm-password" name="confirm_password" class="form-control" autocomplete="new-password" required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Payment Information -->
+            <fieldset>
+                <legend>Payment Information</legend>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label for="credit-card" class="form-label">Credit Card Type</label>
+                        <select id="credit-card" name="credit_card" class="form-select" autocomplete="cc-type" required>
+                            <option value="" selected disabled>Select Card Type</option>
+                            <option value="visa">Visa</option>
+                            <option value="mastercard">MasterCard</option>
+                            <option value="amex">American Express</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="card-number" class="form-label">Credit Card Number</label>
+                        <input type="text" id="card-number" name="card_number" class="form-control" autocomplete="cc-number" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="expiry" class="form-label">Expiration Date</label>
+                        <input type="month" id="expiry" name="expiry" class="form-control" autocomplete="cc-exp" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="csc" class="form-label">CSC Code</label>
+                        <input type="text" id="csc" name="csc" class="form-control" autocomplete="cc-csc" required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Billing Address -->
+            <fieldset>
+                <legend>Billing Address</legend>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label for="billing-street" class="form-label">Street Address</label>
+                        <input type="text" id="billing-street" name="billing_street" class="form-control" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="billing-address2" class="form-label">Address Line # 2</label>
+                        <input type="text" id="billing-address2" name="billing_address2" class="form-control">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="billing-city" class="form-label">City</label>
+                        <input type="text" id="billing-city" name="billing_city" class="form-control" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="billing-state" class="form-label">State</label>
+                        <select id="billing-state" name="billing_state" class="form-select" required>
+                            <option value="" selected disabled>Select State</option>
+                            <option value="MO">Missouri (MO)</option>
+                            <option value="IL">Illinois (IL)</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="billing-zip" class="form-label">Zip Code</label>
+                        <input type="text" id="billing-zip" name="billing_zip" class="form-control" required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Shipping Address -->
+            <fieldset>
+                <legend>Shipping Address</legend>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label for="shipping-street" class="form-label">Street Address</label>
+                        <input type="text" id="shipping-street" name="shipping_street" class="form-control" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="shipping-address2" class="form-label">Address Line # 2</label>
+                        <input type="text" id="shipping-address2" name="shipping_address2" class="form-control">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="shipping-city" class="form-label">City</label>
+                        <input type="text" id="shipping-city" name="shipping_city" class="form-control" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="shipping-state" class="form-label">State</label>
+                        <select id="shipping-state" name="shipping_state" class="form-select" required>
+                            <option value="" selected disabled>Select State</option>
+                            <option value="MO">Missouri (MO)</option>
+                            <option value="IL">Illinois (IL)</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="shipping-zip" class="form-label">Zip Code</label>
+                        <input type="text" id="shipping-zip" name="shipping_zip" class="form-control" required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary">Submit Order</button>
+
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
