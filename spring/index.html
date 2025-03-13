@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/icons/code-slash.svg">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+     <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="100">
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#hero">Ethan Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#coursework">Coursework</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resume">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10 text-center animate-on-scroll">
+                    <h1>Ethan Developer</h1>
+                    <p class="lead mt-3">Full Stack Web Developer passionate about creating clean, efficient, and user-friendly applications</p>
+                    <div class="mt-4">
+                        <a href="#portfolio" class="btn btn-light btn-lg me-2">View My Work</a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg">Get In Touch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="section-title text-center animate-on-scroll">
+                <h2 class="text-center">About Me</h2>
+            </div>
+            <div class="row align-items-start">
+                <div class="col-lg-4 mb-4 mb-lg-0 animate-on-scroll">
+                    <div class="about-img">
+                        <img src="images/profile.jpg" alt="My Profile" class="img-fluid rounded">
+                    </div>
+                </div>
+                <div class="col-lg-8 animate-on-scroll">
+                    <h3>Full Stack Web Developer</h3>
+                    <p>Hello! I'm Ethan, a passionate web developer with a strong foundation in modern web technologies. I specialize in creating responsive, user-friendly websites and applications that deliver exceptional user experiences.</p>
+                    <p>My journey into software development began during my undergraduate studies, where I discovered my passion for solving complex problems through code. Since then, I've dedicated myself to continuously learning and improving my skills in various programming languages and frameworks.</p>
+                    <p>I approach each project with creativity, attention to detail, and a focus on writing clean, maintainable code. I'm particularly interested in front-end technologies and user experience design, but I'm equally comfortable working across the full stack.</p>
+                    
+                    <div class="mt-4">
+                        <h4>Skills</h4>
+                        <div class="mt-3">
+                            <span class="skill-badge">HTML5</span>
+                            <span class="skill-badge">CSS3</span>
+                            <span class="skill-badge">JavaScript</span>
+                            <span class="skill-badge">Bootstrap</span>
+                            <span class="skill-badge">React.js</span>
+                            <span class="skill-badge">Node.js</span>
+                            <span class="skill-badge">Express</span>
+                            <span class="skill-badge">MongoDB</span>
+                            <span class="skill-badge">SQL</span>
+                            <span class="skill-badge">Git</span>
+                            <span class="skill-badge">Responsive Design</span>
+                            <span class="skill-badge">UI/UX Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-5 bg-light-custom">
+        <div class="container">
+            <div class="section-title text-center animate-on-scroll">
+                <h2 class="text-center">Portfolio</h2>
+            </div>
+            <div class="row">
+                <!-- Project 1 -->
+                <div class="col-md-6 col-lg-4 mb-4 animate-on-scroll">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="images/project-1.png" alt="E-Commerce Website">
+                        </div>
+                        <div class="card-body px-2 py-4">
+                            <h5 class="card-title">RSS Feed Website</h5>
+                            <p class="card-text">A dynamic RSS feed reader that fetches news from XML files and displays them in grid, card, accordion, and carousel views.</p>
+                            <div class="tech-stack">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="d-flex mt-3">
+                                <a href="https://rss-feed-task.netlify.app/" target="_blank" class="btn btn-sm btn-outline-primary me-2">Live Demo</a>
+                                <a href="https://github.com/Ethan-Mize/Mid-term/tree/main/Midterm" target="_blank" class="btn btn-sm btn-outline-secondary"><i class="bi bi-github"></i> Code</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="col-md-6 col-lg-4 mb-4 animate-on-scroll">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="images/project-2.png" alt="Task Management App">
+                        </div>
+                        <div class="card-body px-2 py-4">
+                            <h5 class="card-title">Miles Per Gallon Converter</h5>
+                            <p class="card-text">A simple MPG converter that allows users to convert fuel efficiency between miles per gallon (MPG) and liters per 100 kilometers (L/100km) using an intuitive interface.</p>
+                            <div class="tech-stack">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Bootstrap</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="d-flex mt-3">
+                                <a href="https://miles-per-gallon.netlify.app/" target="_blank" class="btn btn-sm btn-outline-primary me-2">Live Demo</a>
+                                <a href="https://github.com/Ethan-Mize/Web-Portfolio" target="_blank" class="btn btn-sm btn-outline-secondary"><i class="bi bi-github"></i> Code</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="col-md-6 col-lg-4 mb-4 animate-on-scroll">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="images/project-3.png" alt="Weather Dashboard">
+                        </div>
+                        <div class="card-body px-2 py-4">
+                            <h5 class="card-title">Checkout Form</h5>
+                            <p class="card-text">A responsive checkout form with input validation, real-time error handling, and seamless user experience for entering shipping and payment details.</p>
+                            <div class="tech-stack">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Bootstrap</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="d-flex mt-3">
+                                <a href="https://checkout-ethan.netlify.app/" target="_blank" class="btn btn-sm btn-outline-primary me-2">Live Demo</a>
+                                <a href="https://github.com/Ethan-Mize/Web-Portfolio" target="_blank" class="btn btn-sm btn-outline-secondary"><i class="bi bi-github"></i> Code</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coursework Section -->
+    <section id="coursework" class="py-5">
+        <div class="container">
+            <div class="section-title text-center animate-on-scroll">
+                <h2 class="text-center">Coursework</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4 animate-on-scroll">
+                    <div class="course-card">
+                        <h4>Web Development Fundamentals</h4>
+                        <p>Comprehensive course covering HTML5, CSS3, and JavaScript fundamentals. Developed responsive websites and interactive web applications from scratch.</p>
+                        <p><strong>Key Projects:</strong> Personal blog, Interactive quiz application</p>
+                        <p><strong>Skills Acquired:</strong> Semantic HTML, CSS layouts, JavaScript DOM manipulation</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-4 animate-on-scroll">
+                    <div class="course-card">
+                        <h4>Front-End Web Development</h4>
+                        <p>Advanced course focused on modern front-end frameworks and libraries. Created complex single-page applications with React.js.</p>
+                        <p><strong>Key Projects:</strong> E-commerce product page, Social media dashboard</p>
+                        <p><strong>Skills Acquired:</strong> React.js, State management, Component architecture</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-4 animate-on-scroll">
+                    <div class="course-card">
+                        <h4>Back-End Development</h4>
+                        <p>Server-side programming and database management course. Built RESTful APIs and implemented authentication systems.</p>
+                        <p><strong>Key Projects:</strong> User authentication API, Content management system</p>
+                        <p><strong>Skills Acquired:</strong> Node.js, Express, MongoDB, API design</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-4 animate-on-scroll">
+                    <div class="course-card">
+                        <h4>Full-Stack Web Development</h4>
+                        <p>Capstone course integrating front-end and back-end technologies. Developed complete web applications with database integration.</p>
+                        <p><strong>Key Projects:</strong> Task management system, Online marketplace platform</p>
+                        <p><strong>Skills Acquired:</strong> Full-stack integration, Deployment, Performance optimization</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="py-5 bg-light-custom">
+        <div class="container">
+            <div class="section-title text-center animate-on-scroll">
+                <h2 class="text-center">Resume</h2>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 animate-on-scroll">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h3 class="mb-4">Ethan Developer</h3>
+                            <p class="text-muted">Full Stack Web Developer</p>
+                            
+                            <hr>
+                            
+                            <h4 class="mt-4">Education</h4>
+                            <div class="mb-3">
+                                <p class="mb-1"><strong>Bachelor of Science in Computer Science</strong></p>
+                                <p class="mb-1">University of Technology</p>
+                                <p class="text-muted">2022 - Present</p>
+                            </div>
+                            
+                            <h4 class="mt-4">Technical Skills</h4>
+                            <div class="mb-3">
+                                <p><strong>Languages:</strong> HTML5, CSS3, JavaScript, SQL</p>
+                                <p><strong>Frameworks/Libraries:</strong> React.js, Node.js, Express, Bootstrap</p>
+                                <p><strong>Tools:</strong> Git, GitHub, VS Code, Chrome DevTools</p>
+                                <p><strong>Databases:</strong> MongoDB, MySQL</p>
+                            </div>
+                            
+                            <h4 class="mt-4">Projects</h4>
+                            <div class="mb-3">
+                                <p class="mb-1"><strong>RSS Feed Website</strong></p>
+                                <p>A dynamic RSS feed reader that fetches news from XML files and presents them in grid, card, accordion, and carousel views using HTML, CSS, and JavaScript.</p>
+                            </div>
+                            <div class="mb-3">
+                                <p class="mb-1"><strong>Miles Per Gallon Converter</strong></p>
+                                <p>A simple MPG converter that allows users to convert fuel efficiency between miles per gallon (MPG) and liters per 100 kilometers (L/100km) using an interactive interface with HTML, CSS, Bootstrap, and JavaScript.</p>
+                            </div>
+                            <div class="mb-3">
+                                <p class="mb-1"><strong>Checkout Form</strong></p>
+                                <p>A responsive checkout form with input validation, real-time error handling, and seamless user experience for entering shipping and payment details, built with HTML, CSS, Bootstrap, and JavaScript.</p>
+                            </div>                            
+                            
+                            <div class="text-center mt-4">
+                                <a href="doc/resume.pdf" class="btn btn-primary" download>Download Full Resume</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="section-title text-center animate-on-scroll">
+                <h2 class="text-center">Contact Me</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-5 mb-4 mb-lg-0 animate-on-scroll">
+                    <div class="contact-info">
+                        <h4>Let's Connect</h4>
+                        <p>Feel free to reach out if you have any questions, opportunities, or just want to say hello!</p>
+                        
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-envelope"></i>
+                            <div>
+                                <p class="mb-0">ethanmize556@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links mt-4">
+                            <a href="https://www.linkedin.com/in/ethan-mize-525732312/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            <a href="https://github.com/Ethan-Mize" target="_blank"><i class="bi bi-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-7 animate-on-scroll">
+                    <!-- JotForm would be embedded here in the actual implementation -->
+                    
+    <iframe
+    id="JotFormIFrame-250682834185463"
+    title="Ethan Portfolio"
+    onload="window.parent.scrollTo(0,0)"
+    allowtransparency="true"
+    allow="geolocation; microphone; camera; fullscreen"
+    src="https://form.jotform.com/250682834185463"
+    frameborder="0"
+    style="min-width:100%;max-width:100%;height:539px;border:none;"
+    scrolling="no"
+  >
+  </iframe>
+  
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="mb-0">&copy; 2025 Ethan Developer. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop"><i class="bi bi-arrow-up"></i></a>
+
+    <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>
+  <script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-250682834185463']", "https://form.jotform.com/")</script>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script>
+        // Back to Top Button
+        document.addEventListener('DOMContentLoaded', function() {
+            const backToTopButton = document.getElementById('backToTop');
+            
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) {
+                    backToTopButton.classList.add('active');
+                } else {
+                    backToTopButton.classList.remove('active');
+                }
+            });
+            
+            backToTopButton.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+            
+            // Form submission
+            const contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    alert('Thank you for your message! In a real implementation, this would be sent via JotForm.');
+                    contactForm.reset();
+                });
+            }
+            
+            // Scroll animation
+            const animateElements = document.querySelectorAll('.animate-on-scroll');
+            
+            const checkIfInView = () => {
+                const windowHeight = window.innerHeight;
+                const windowTopPosition = window.scrollY;
+                const windowBottomPosition = windowTopPosition + windowHeight;
+                
+                animateElements.forEach(element => {
+                    const elementHeight = element.offsetHeight;
+                    const elementTopPosition = element.offsetTop;
+                    const elementBottomPosition = elementTopPosition + elementHeight;
+                    
+                    // Check if element is in viewport
+                    if (
+                        (elementBottomPosition >= windowTopPosition) && 
+                        (elementTopPosition <= windowBottomPosition)
+                    ) {
+                        element.classList.add('animate');
+                    }
+                });
+            };
+            
+            window.addEventListener('scroll', checkIfInView);
+            window.addEventListener('load', checkIfInView);
+        });
+        
+        // Smooth scrolling for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 70,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close navbar collapse on mobile
+                    const navbarToggler = document.querySelector('.navbar-toggler');
+                    const navbarCollapse = document.querySelector('.navbar-collapse');
+                    if (navbarCollapse.classList.contains('show')) {
+                        navbarToggler.click();
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
